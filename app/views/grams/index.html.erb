@@ -2,7 +2,11 @@
   <% @grams.each do |gram| %>
     <div class="card">
       <div class="handle"><%= gram.user.try(:email) %></div>
-      <%= gram.picture.url %>
+      
+      	<p>
+      	<%= gram.picture.url %>
+      </p>
+     
       <p>
         <%= gram.message %>
       </p>
